@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import ProductsDetails from '../components/productsDetails'
+import ProductsDetails from '../components/ProductDetails'
 function ProductsPage(props) {
   
   return (
