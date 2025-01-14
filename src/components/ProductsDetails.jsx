@@ -3,7 +3,7 @@ import {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import { api } from '../api'
 function ProductsDetails(props) {
-  const [productDetails,setProductDetails]=useState([]);
+  const [productItems,setProductDetails]=useState([]);
   const [restName,setRestName]=useState(false)
   const {firmId}=useParams()
   console.log(firmId)
@@ -35,7 +35,7 @@ useEffect(()=>{
         </h2>
        </div>
         {
-            productDetails.map((eachItem)=>{
+            productItems.map((eachItem)=>{
                 return(
                     <div className="product-card">
                         <div className="product-content">
